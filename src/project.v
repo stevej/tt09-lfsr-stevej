@@ -5,6 +5,8 @@
 
 `default_nettype none
 
+`include "lfsr.sv"
+
 module tt_um_example (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
@@ -22,7 +24,7 @@ module tt_um_example (
   assign uio_oe  = 8'b0000_0000;
 
 
- lfsr lsfr0 (
+ tt_um_lfsr_stevej lsfr0 (
     .clk(clk),
     .rst_n(rst_n),
     .write_enable(uio_in[0]),

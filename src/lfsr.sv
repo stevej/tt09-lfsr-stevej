@@ -1,7 +1,7 @@
 `ifndef _LFSR_
 `define _LFSR_
 
-module lfsr (
+module tt_um_lfsr_stevej (
     input logic clk,
     input logic rst_n,
     input logic write_enable,  // Set the seed
