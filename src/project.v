@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-`include "lfsr.sv"
+`include "tt_um_lfsr_stevej.sv"
 
 module tt_um_example (
     input  wire [7:0] ui_in,    // Dedicated inputs
