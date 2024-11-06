@@ -23,7 +23,6 @@ module tt_um_lfsr_stevej (
   assign uio_out = 0;
   assign uio_oe  = 8'b0000_0000;
 
-
  lfsr lsfr0 (
     .clk(clk),
     .rst_n(rst_n),
@@ -33,6 +32,6 @@ module tt_um_lfsr_stevej (
 );
 
   // List all unused inputs to prevent warnings
-  //wire _unused = &{1'b0};
+  wire _unused = &{ena, uio_in[7:1], 1'b0};
 
 endmodule
