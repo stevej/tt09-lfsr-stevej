@@ -1,5 +1,9 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
+# LFSR Linear Feedback Shift Register
+
+A random number generator built using a Linear Feedback Shift Register. Also includes a feature to restart it with a specific starting state (seed).
+
 # Tiny Tapeout Verilog Project Template
 
 - [Read the documentation for project](docs/info.md)
