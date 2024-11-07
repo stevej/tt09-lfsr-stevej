@@ -24,13 +24,9 @@ module lfsr (
         r_lfsr <= seed;
       end else begin
         r_lfsr <= {r_lfsr[6:0], r_xnor};
+        r_xnor <= r_lfsr[7] ^ r_lfsr[6];
       end
     end
-  end
-
-  always_ff @(posedge clk) begin
-    // values come from Xilinx XAPP 052 July 7, 1996
-    r_xnor <= r_lfsr[7] ^ r_lfsr[6];
   end
 
 endmodule
